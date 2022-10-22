@@ -8,6 +8,12 @@ public class MemberServiceImpl implements MemberService{
         this.memberRepository = memberRepository;
     }
 
+
+    //for TEST
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
+
     @Override
     public void join(Member member) {
         memberRepository.save(member);
